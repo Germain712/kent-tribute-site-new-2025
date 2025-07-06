@@ -19,11 +19,15 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background-image: url("imgs/bg-texture-dominica.jpg");
+  background-repeat: repeat;
+  background-size: 300px;
 }
 
 .dark-theme {
   background-color: var(--dark-bg);
   color: var(--white);
+  background-image: url("imgs/bg-texture-dark.jpg");
 }
 
 header {
@@ -33,6 +37,9 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  background-image: url("imgs/header-bg-flag.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 nav a {
@@ -40,10 +47,20 @@ nav a {
   text-decoration: none;
   color: var(--black);
   font-weight: bold;
+  transition: color 0.3s;
+}
+
+.dark-theme nav a {
+  color: var(--yellow);
 }
 
 nav .active {
   color: var(--purple);
+}
+
+.dark-theme nav .active {
+  color: var(--yellow);
+  font-weight: bold;
 }
 
 nav button {
@@ -60,6 +77,13 @@ main {
   padding: 1.5em;
   max-width: 960px;
   margin: auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme main {
+  background-color: rgba(17, 17, 17, 0.95);
 }
 
 h1,
@@ -93,6 +117,8 @@ h3 {
 .decor {
   max-width: 100%;
   height: auto;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
 .symbol figcaption {
@@ -138,6 +164,12 @@ blockquote {
   border-collapse: collapse;
   margin-top: 1em;
   background-color: var(--light-bg);
+  color: var(--black);
+}
+
+.dark-theme .dna table {
+  background-color: #222;
+  color: var(--white);
 }
 
 .dna caption {
@@ -169,4 +201,7 @@ footer {
   background-color: var(--green);
   color: var(--white);
   margin-top: 2em;
+  background-image: url("imgs/footer-flag-texture.jpg");
+  background-size: cover;
+  background-position: center;
 }
