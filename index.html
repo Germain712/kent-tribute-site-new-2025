@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ancestral Tribute | Kent Germain</title>
   <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-theme');
+    }
+  </script>
 </head>
 
 <body>
@@ -14,6 +19,7 @@
       <a href="index.html">Home</a>
       <a href="#">Gallery</a>
       <a href="ancestral-tribute.html" class="active">Ancestral Tribute</a>
+      <button onclick="toggleTheme()" aria-label="Toggle dark/light theme">🌓</button>
     </nav>
   </header>
 
@@ -26,7 +32,8 @@
         From the red soil of Dominica to the sacred heart of Africa, we remember."
       </p>
       <figure class="symbol">
-        <img src="imgs/adinkra_symbol_humility.webp" alt="Adinkra symbol for strength and humility" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Dwennimmen_Adinkra_symbol.svg"
+          alt="Adinkra symbol for strength and humility" />
         <figcaption>Dwennimmen – strength & humility</figcaption>
       </figure>
     </section>
@@ -41,7 +48,9 @@
         <li>Echoed in Caribbean rhythms</li>
       </ul>
       <p>We inherit strength, dignity, and an unbreakable spirit.</p>
-      <img class="decor" src="imgs/bantu-pattern.jpg" alt="Bantu decorative pattern" />
+      <img class="decor"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Bantu_patterns.svg/800px-Bantu_patterns.svg.png"
+        alt="Bantu decorative pattern" />
     </section>
 
     <section class="section">
@@ -54,7 +63,9 @@
       </ul>
       <p>We inherit clarity, balance, and spiritual grace.</p>
       <figure class="symbol">
-        <img src="imgs/calabash.jpg" alt="Fulani calabash art" />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Calabash_fulani_art.jpg/640px-Calabash_fulani_art.jpg"
+          alt="Fulani calabash art" />
         <figcaption>Fulani calabash — beauty and craft</figcaption>
       </figure>
     </section>
@@ -94,8 +105,40 @@
     <section class="music">
       <h3>🎵 Soundtrack of Ancestry</h3>
       <p>Drumming from Congo. Flute from the Sahel. These sounds are our language of memory:</p>
-      <iframe width="100%" height="120" src="https://youtu.be/_FJ03NjJEUY?si=zzWluEDCFLbZjOCW"
-        title="Ancestral Music Playlist" frameborder="0" allowfullscreen></iframe>
+      <div class="video-wrapper" role="region" aria-label="Ancestral Music Playlist">
+        <iframe width="100%" height="315"
+          src="https://www.youtube.com/embed/videoseries?list=PL3KqkS6cTnpfWBOVZSkbEMk5YXyLFt8A2&loop=1&rel=0&autoplay=0"
+          title="Ancestral Music Playlist" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section class="dna">
+      <h3>🧬 DNA Heritage Summary</h3>
+      <table>
+        <caption>Lineage Summary – Kent Germain</caption>
+        <thead>
+          <tr>
+            <th>Line</th>
+            <th>Ethnic Group</th>
+            <th>Region</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Paternal</td>
+            <td>Akele / Bantu</td>
+            <td>Gabon & Congo</td>
+          </tr>
+          <tr>
+            <td>Maternal</td>
+            <td>Fulani</td>
+            <td>West Africa – Sahel region</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </main>
 
